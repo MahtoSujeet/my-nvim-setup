@@ -1,5 +1,5 @@
-function color_my_pencils(color)
-	color = color or "rose-pine"
+function ColorMyPencils(color)
+	color = color or "github_dark_default"
 	vim.cmd.colorscheme(color)
 
 	-- To make bg transparent
@@ -8,4 +8,4 @@ function color_my_pencils(color)
 
 end
 
-color_my_pencils()
+ColorMyPencils()

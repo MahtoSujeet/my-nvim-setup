@@ -1,9 +1,14 @@
-vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
-vim.keymap.set({"v", "i"}, "jk", "<esc>")
-vim.keymap.set({"v", "i"}, "kj", "<esc>")
-vim.keymap.set({"n", "i", "v"}, "<c-s>", ":w<cr>")
+local set = vim.keymap.set
 
--- comment
--- DEBUG / isnt working in keymap
--- vim.keymap.set("n", "<c-/>", vim.cmd.CommentToggle)
+vim.g.mapleader = " "
+set("n", "<leader>e", vim.cmd.Ex)
+set("i", "jk", "<esc>")
+set("i", "kj", "<esc>")
+
+-- save the buffer
+set("n", "<c-s>", ":w<cr>")
+set("i", "<c-s>", "<esc>:w<cr>")
+set("n", "<leader>q", ":q!<cr>")
+
+-- To open config file
+set("n", "<leader>nc", ":tabnew ~/.config/nvim/init.lua<cr>")
