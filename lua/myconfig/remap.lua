@@ -11,4 +11,4 @@ set("i", "<c-s>", "<esc>:w<cr>")
 set("n", "<leader>q", ":q!<cr>")
 
 -- To open config file
-set("n", "<leader>nc", ":tabnew ~/.config/nvim/init.lua<cr>")
+set("n", "<leader>nc", ":tabnew ~/.config/nvim/<cr>")
