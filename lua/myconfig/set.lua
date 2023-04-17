@@ -17,9 +17,9 @@ vim.opt.incsearch = true
 vim.g.mapleader = " "
 
 -- Better Netrw
-vim.g.netrw_banner = 0    -- Hide banner
-vim.g.netrw_winsize = 75
-vim.g.netrw_altv = 2      -- Open with right splitting
-vim.g.netrw_liststyle = 3 -- Tree-style view
--- use .gitignore
-vim.g.netrw_list_hide = (vim.fn["netrw_gitignore#Hide"]()) .. [[,\(^\|\s\s\)\zs\.\S\+]]
+-- vim.g.netrw_banner = 0    -- Hide banner
+-- vim.g.netrw_winsize = 75
+-- vim.g.netrw_altv = 2      -- Open with right splitting
+-- vim.g.netrw_liststyle = 3 -- Tree-style view
+-- -- use .gitignore
+-- vim.g.netrw_list_hide = (vim.fn["netrw_gitignore#Hide"]()) .. [[,\(^\|\s\s\)\zs\.\S\+]]
